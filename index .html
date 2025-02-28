@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Rackets Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .blog {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        #contact {
+            display: none;
+        }
+        .contact-info {
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+    <script>
+        function toggleContact() {
+            var contactSection = document.getElementById("contact");
+            contactSection.style.display = (contactSection.style.display === "none" || contactSection.style.display === "") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Badminton Rackets Blog
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a onclick="toggleContact()">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="blog">
+            <h2>Li-Ning</h2>
+            <div class="article">
+                <h3>About the Brand</h3>
+                <img src="image_ap1" alt="Li-Ning Racket">
+                <p>Li-Ning is a globally recognized brand known for high-quality badminton rackets, engineered with advanced technology to enhance durability and performance.</p>
+            </div>
+            <div class="article">
+                <h3>Racket Specifications</h3>
+                <ul>
+                    <li><strong>Aeronaut Series:</strong> Control & Stability - Example: Aeronaut 9000C.</li>
+                    <li><strong>Turbo Charging Series:</strong> Speed & Power - Example: Turbo Charging 80.</li>
+                    <li><strong>3D Calibar Series:</strong> Power & Attack - Example: 3D Calibar 900.</li>
+                    <li><strong>Windstorm Series:</strong> Ultra-Lightweight - Example: Windstorm 72.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog">
+            <h2>APACS</h2>
+            <div class="article">
+                <h3>About the Brand</h3>
+                <img src="image_ap2" alt="APACS Racket">
+                <p>APACS, a Malaysian brand, is known for offering high-quality yet affordable badminton rackets, gaining international recognition for their excellent value for money.</p>
+            </div>
+            <div class="article">
+                <h3>Racket Specifications</h3>
+                <ul>
+                    <li><strong>Power-Oriented Rackets:</strong> Best for smashes - Example: Z-Ziggler, Lethal 66.</li>
+                    <li><strong>Speed-Oriented Rackets:</strong> Quick maneuverability - Example: Feather Weight 55, Tantrum 200.</li>
+                    <li><strong>All-Round Rackets:</strong> Balanced attack & defense - Example: Finapi 232, Blend Duo 88.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog" id="contact">
+            <h2>Contact</h2>
+            <p class="contact-info"><strong>Name:</strong> Saran</p>
+            <p class="contact-info"><strong>Mobile No:</strong> +91 97393 79681</p>
+            <p class="contact-info"><strong>Address:</strong> 54/475 Olympic Sporting, Tribhaven Theater, 1st Cross Rd, Whitefield, Bangalore</p>
+        </div>
+    </div>
+</body>
+</html>
